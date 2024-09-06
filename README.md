@@ -7,7 +7,7 @@ What you see is what you get! Very simple prototype. Call it beta.
 
 Issues in advance:
 - The one problem is getting the resolution sorting down. It works but you have to close and reopen to get it to sort after using F2 to manipulate priority.
-- Due to the way I went with the decision pipeling a GUI event is calling itself with the best case code I came up with, made a workaround but it only does partial sort this way, for the XML format the Drivers devs have taken it is ideal to sort prior to writing out so all the likened width x hight are nested. It may require a rebuild of the methods used for iterating through the list view items.
+- Due to the way I went with the decision pipeling a GUI event is calling itself with the best case code I came up with, made a workaround but it only does partial sort this way, for the XML format the Drivers devs have recently adopted it is ideal to sort everything prior to writing out so all the likened width x hight are nested. It may require a rebuild of the methods used for iterating through the list view items.
 
 Things that work:
 - Everything else works as planned that I am aware.
