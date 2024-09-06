@@ -24,7 +24,7 @@ Installing:
 - If you unpack the drivers from itsmiketech into the same folder it can take care of everything else, at worst you might just copy paste all the values into the write places for the option.txt, and save a copy to be safe. Then load it by launching this tool while it is in the C:\IddSampleDriver folder or in the script folder at Backups\[backup_title_here].backup. If it is misbehaving for you it should at least be able to load it in sorted and write out your XML for you, it did MINE.
 
 TLDR: Again
-1. Unpack the script or exe, if you are using the script you will need (Autohotkey)[https://www.autohotkey.com) installed.
+1. Unpack the script or exe, if you are using the script you will need (Autohotkey)[https://www.autohotkey.com] installed.
 2. Unpack the (Virtual Display Drivers Unpacked)[https://github.com/itsmikethetech/Virtual-Display-Driver] into the same folder.
 3. Run the exe or script.
 4. How to use it? Read the GUI.
