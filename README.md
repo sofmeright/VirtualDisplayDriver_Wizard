@@ -15,7 +15,7 @@ Things that work:
 - Everything else works as planned that I am aware.
 - User named backups feature
 - installation/uninstallation/Reload of drivers.
-- GPU selection.
+- GPU Detection/Selection.
 - Monitor Selection
 - Reading and writing from the files.
 - All other core features work.
