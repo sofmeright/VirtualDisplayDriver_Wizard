@@ -21,7 +21,7 @@ Things that work:
 Installing:
 - I recommend creating a copy of any vdd_settings.xml, option.txt, adapter.txt configs you have in your C:\IddSampleDriver folder just to be extra safe.
 - The script/compiled executable should go in the folder where you store your (Virtual Display Drivers Unpacked)[https://github.com/itsmikethetech/Virtual-Display-Driver], it will need access to them for installation purposes.
-- If you unpack the drivers from itsmiketech into the same folder it can take care of everything else, at worst you might just copy paste all the values into the write places for the option.txt, and save a copy to be safe. Then load it by launching this tool while it is in the C:\IddSampleDriver folder or in the script folder at Backups\[backup_title_here].backup. If it is misbehaving for you it should at least be able to load it in sorted and write out your XML for you, it did MINE.
+- If you unpack the drivers from itsmiketech into the same folder it can take care of everything else, at worst you might just copy paste all the values into the write places for the option.txt, and save a copy to be safe. Then load it by launching this tool while it is in the C:\IddSampleDriver folder or in the script folder at Backups\\[backup_title_here].backup. If it is misbehaving for you it should at least be able to load it in sorted and write out your XML for you, it did MINE.
 
 TLDR: Again
 1. Unpack the script or exe, if you are using the script you will need (Autohotkey)[https://www.autohotkey.com] installed.
