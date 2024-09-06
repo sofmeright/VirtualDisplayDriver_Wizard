@@ -23,8 +23,8 @@ Things that work:
 Installing:
 - Not a bad idea to make a copy of any vdd_settings.xml, option.txt, adapter.txt configs you may already have in your C:\IddSampleDriver folder just to be safe.
 - The script/compiled executable should go in the folder where you store your [Virtual Display Drivers (Unpacked)](https://github.com/itsmikethetech/Virtual-Display-Driver), it will need access to them for installation purposes.
-Notes:
-- At runtime it will load the vdd_settings.xml if present otherwise it will try to load adapter/option.txt(s) all can be placed manually into the C:\IddSampleDriver folder.
+Notes/Hints:
+- At runtime it will load the vdd_settings.xml if present otherwise it will try to load adapter/option.txt. You can also replace/omit these accordingly at C:\IddSampleDriver if you want to workaround this very intended behavior.
 - You can also place any config file in a folder "Backups" with the filename in the format "option.txt.[backup_title_here].backup" just replace whatever (vdd_settings.xml/option.txt/adapter.txt)
 - You can name a backup whatever you like and place it manually and when you relaunch you can restore from it just as if you backed up from the gui.
 
