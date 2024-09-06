@@ -27,7 +27,7 @@ Installing:
 
 TLDR: Again
 1. Unpack the script or exe, if you are using the script you will need [Autohotkey](https://www.autohotkey.com) installed.
-2. Unpack the [Virtual Display Drivers](https://github.com/itsmikethetech/Virtual-Display-Driver) Unpacked into the same folder.
+2. Unpack the [Virtual Display Drivers](https://github.com/itsmikethetech/Virtual-Display-Driver) into the same folder.
 3. Run the exe or script.
 4. How to use it? Read the GUI.
 
