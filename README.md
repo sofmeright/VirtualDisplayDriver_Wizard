@@ -27,7 +27,7 @@ Installing:
 Notes/Hints:
 - At runtime it will load the vdd_settings.xml if present otherwise it will try to load adapter/option.txt. You can also replace/omit these accordingly at C:\IddSampleDriver if you want to workaround this very intended behavior.
 - You can also place any config file in a folder "Backups" with the filename in the format "option.txt.[backup_title_here].backup" just replace whatever (vdd_settings.xml/option.txt/adapter.txt)
-- You can name a backup whatever you like and place it manually and when you relaunch you can restore from it just as if you backed up from the gui.
+- You can name a backup whatever you like and place it manually and when you relaunch you can restore from it just as if you backed up from the GUI.
 - What is Priority??? 🤷‍♀️, I made priority up to at least be able to force my preferred aspect ratio at the top of the list due to an issue with Immortals Fenyx Rising [HERE, look to the issues solutions segement and its what I was facing...](http://sh.uni2.cc/28JLJ)
 
 
