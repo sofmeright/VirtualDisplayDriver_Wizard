@@ -42,7 +42,7 @@ TLDR: Again
 Again we will call this a beta. We will resolve this bug next and after that do some general UI cleanup. This is a quick and dirty tool by design. If you want to contribute and have experience most of the bones are here, be my guest. I do not think there would be much interest in this, I plan to do a little more and call it a day.
 
 Planned Features:
-- Like TOMORROW! Placing good default configs (i.e. option.txt) into the right places when there is nothing there. Overlooked that *completely*.
+- ~~Like TOMORROW! Placing good default configs (i.e. option.txt) into the right places when there is nothing there. Overlooked that *completely*.~~
 - Better Sorting ASAP
 - A UI Theme/Overhaul.
 
