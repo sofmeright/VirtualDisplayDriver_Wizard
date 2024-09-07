@@ -14,7 +14,7 @@ Issues in advance:
 
 Things that work:
 - User named backups feature
-- installation/uninstallation/Reload of drivers.
+- installation/uninstallation/Reload of drivers. (Reload is useful, in Sunshine the time reload takes is not enough to cause the session to terminate)
 - Pushing the configs to the C:\IddSampleDriver if not already there.
 - Converting xml to text, text to xml
 - Sorting your resolutions by priority levels. Moving entries with the same width and hight as a group.
