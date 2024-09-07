@@ -36,8 +36,9 @@ Notes/Hints:
 TLDR: Again
 1. Unpack the script or exe, if you are using the script you will need [Autohotkey](https://www.autohotkey.com) installed.
 2. Unpack the [Virtual Display Drivers](https://github.com/itsmikethetech/Virtual-Display-Driver) into the same folder.
-3. Run the exe or script.
-4. How to use it? Read the GUI.
+3. Install Devcon with [Windows Development Kit](https://download.microsoft.com/download/2/5/f/25f22c34-1cc4-404c-9f92-2ff26cc4ac91/KIT_BUNDLE_WDK_MEDIACREATION/wdksetup.exe) or [(this unofficial) DevCon-Installer](https://github.com/Drawbackz/DevCon-Installer/releases/tag/1.3)
+4. Run the exe or script.
+5. How to use it? Read the GUI.
 
 Again we will call this a beta. We will resolve this bug next and after that do some general UI cleanup. This is a quick and dirty tool by design. If you want to contribute and have experience most of the bones are here, be my guest. I do not think there would be much interest in this, I plan to do a little more and call it a day.
 
