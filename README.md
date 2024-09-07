@@ -5,7 +5,7 @@ Kai @ PPIT presents to you the Virtual Display Driver Wizard.
 
 What you see is what you get! Very simple prototype. Call it beta. 
 
-I use this in my [workstation setup](http://sh.uni2.cc/28JLJ) was wondering how hard it would be to have a GUI for this and here we are.
+I use the Virtual Display Driver in my [workstation setup](http://sh.uni2.cc/28JLJ) was wondering how hard it would be to have a GUI for this and here we are.
 
 Issues in advance:
 - None that I am aware of at this time.
