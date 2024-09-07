@@ -10,6 +10,7 @@ I use the Virtual Display Driver in my [workstation setup](http://sh.uni2.cc/28J
 Issues in advance:
 - None that I am aware of at this time.
 - OH WAIT UGLY -> UGLY UI is AN ISSUE! Whats up next? A GUI rework!
+- Spoke too soon, minor issue easy to fix will do soon. To have the selected RenderEngine save to file, you will need to edit a priority. (You can even press F2 then Press ENTER) There is no logic to detect when a user changes makes a selection in the combo box and in turn to write to file. For now its recommended to use this workaround.
 
 Things that work:
 - User named backups feature
