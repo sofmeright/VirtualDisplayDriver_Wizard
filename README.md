@@ -1,6 +1,6 @@
 # IDDSampleDriver_Wizard
 
-Kai of PrPlanIT.com presents to you:
+Kai of [PrPlanIT.com](https://kb.precisionplanit.com) presents to you:
 
 Indirect Display Driver Sample Wizard ~ IddSampleDriver Wizard
 - A quick and dirty GUI tool for manipulating Indirect Display Driver Sample implementations like the [VirtualDisplayDriver from itsmikethetech](https://github.com/itsmikethetech/Virtual-Display-Driver). What you see is what you get. Additional features such as CLI and an Interactive Installer are planned.
