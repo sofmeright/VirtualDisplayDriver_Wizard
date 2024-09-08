@@ -20,7 +20,8 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 > Note: Additional features such as a GUI Overhaul, CLI, and an Interactive Installer are planned. These features have been considered prior to creation of the tool and the design philosophy allows for ease of implementation.
 
 # Installation:
-1. Unpack the exe or the script. Note: To directly execute from the ".ahk" file (plain-text source code), you must install [Autohotkey](https://www.autohotkey.com).
+1. Unpack the exe or the script.
+> Note: To directly execute from the ".ahk" file (plain-text source code), you must install [Autohotkey](https://www.autohotkey.com).
 2. Unpack the [Virtual Display Drivers](https://github.com/itsmikethetech/Virtual-Display-Driver) into the same folder.
 3. Install Devcon with [Windows Development Kit](https://download.microsoft.com/download/2/5/f/25f22c34-1cc4-404c-9f92-2ff26cc4ac91/KIT_BUNDLE_WDK_MEDIACREATION/wdksetup.exe) or [(this unofficial) DevCon-Installer](https://github.com/Drawbackz/DevCon-Installer/releases/tag/1.3).
 4. Run the exe or script.
