@@ -231,7 +231,7 @@ DriverReload()
 }
 
 CMDtoSTDOut(command) {
-    ; WshShell object: http://msdn.microsoft.com/en-us/library/aew9yb99 ¬
+    ; WshShell object: http://msdn.microsoft.com/en-us/library/aew9yb99 Â¬
     shell := ComObjCreate("WScript.Shell")
     ; Execute a single command via cmd.exe
     exec := shell.Exec(ComSpec " /c " command)
