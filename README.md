@@ -13,7 +13,7 @@ Features:
 - Monitor(s) (Set # of) - Adjusting the amount of virtual displays the driver is providing.
 - RenderingEngine(GPU) (*Detection* & Selection)
 - Resolutions (Adding / Removing) - Note: Removing is done by highlighting and pressing the DELETE key.
-- Resolutions (Grouping of Resolutions) - Resolution enteries containing the same width and hight are sorted by the earliest occurence of that specific (w x h) in the list. ~ This is done so they are in grouped entries when we write out the XML config.
+- Resolutions (Grouping of Resolutions) - Resolution enteries containing the same [width x hight] are sorted by the earliest occurence of that specific [w x h] in the list. ~ This is done so they are in grouped entries when we write out the XML config.
 - Priority (Changing) - The priority of a specific resolution can be set by selecting it and pressing F2 then pressing Enter when finished with the edit. (See: What is priority? in [Notes / Hints])
 - Configs (Reading / Writing) - Reads and Writes both config formats (.txt & .xml).
 - Configs (Conversion) - Efficiently converts between the xml and text config formats, via injecting them as decribed in [Notes / Hints].
