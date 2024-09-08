@@ -13,7 +13,7 @@ How did we get here:
 - I use the Virtual Display Driver in my [workstation setup](http://sh.uni2.cc/28JLJ) and at a point I wondered how hard it would be to make a GUI for the driver and in turn I had to figure out how hard it was to finish my thought.
 - I'm sharing this because I am typically a leecher and not a seeder. I use a lot of open source products in my workflow but do not often contribute so I'd be tickled if anyone gets use of this to think maybe its a drop in a bucket but its giving the slightest back.
 
-Issues in advance:
+Current Issues / Workarounds:
 - None that I am aware of at this time.
 - OH WAIT UGLY -> UGLY UI is AN ISSUE! Whats up next? A GUI rework!
 - Spoke too soon, I will fix this next: Solution - In order to have the selected RenderEngine (or Monitor Count) save to file, you will need to edit a priority (or add a resolution). (You can even press F2 then Press ENTER) There is no logic to detect when a user makes a selection in the combo box and in turn to write to file. For now its recommended to use this temporary workaround.
