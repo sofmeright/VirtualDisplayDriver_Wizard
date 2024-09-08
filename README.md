@@ -1,4 +1,4 @@
-# IDDSample_Wizard
+# VirtualDisplayDriver_Wizard
 
 Kai of [PRPlanIT.com](https://kb.precisionplanit.com) presents to you:
 
