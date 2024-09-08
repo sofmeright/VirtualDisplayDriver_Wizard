@@ -6,6 +6,10 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 
 <img src="https://github.com/sofmeright/IDDSampleDriver_Wizard/blob/main/PPIT-IddSample_Wiz-v0.602-SS_GUI_Advanced.png" width="220" />
 
+### How did we get here:
+- I use the Virtual Display Driver in my [workstation setup](http://sh.uni2.cc/28JLJ) and at a point I wondered how hard it would be to make a GUI for the driver and in turn I had to figure out how hard it was to finish my thought.
+- I'm sharing this because I am typically a leecher and not a seeder. I use a lot of open source products in my workflow but do not often contribute. I'd be tickled if anyone gets use of this even if its only a drop-in-the-bucket.
+
 ### Features:
 - Driver (Install / Uninstall / Reload) - Note: Reload has been useful, in my experience using Sunshine; reload did not cause the active session to terminate and refreshed changes.
 - Monitor(s) (Set # of) - Adjusting the amount of virtual displays the driver is providing.
@@ -46,10 +50,6 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 4. Silent intall via CMD. Creating a CMD syntax to use this tool without the GUI, that way the driver can be configured from other tools. In essence allow operation from a staging tool/sunshine or any process that can load it directly or a .bat that calls it. This will allow users to load initial settings or toggle install/uninstall/reload. Users could bulk configure the drivers for gaming servers with many VMs with specific guests settings in an efficient manner by this feature.
 5. A generic installer flow with options for users who do not want an Advanced tool and just want to get up and going.
 6. Found [a fork](https://github.com/timminator/Virtual-Display-Driver) of the Virtual Display Driver that has a interactive installer albeit less utilitarian than this, they cite that they used [nefcon](https://github.com/nefarius/nefcon), will prospect this as an alternative install/uninstall/reload method if it can provide the reload feature it may be easier to package than devcon. 
-  
-### How did we get here:
-- I use the Virtual Display Driver in my [workstation setup](http://sh.uni2.cc/28JLJ) and at a point I wondered how hard it would be to make a GUI for the driver and in turn I had to figure out how hard it was to finish my thought.
-- I'm sharing this because I am typically a leecher and not a seeder. I use a lot of open source products in my workflow but do not often contribute. I'd be tickled if anyone gets use of this even if its only a drop-in-the-bucket.
 
 ### Dependencies / Requirements:
 - This software configures the state of a few implementations of Microsofts Indirect Display Driver Sample, as such a compatible implementation is required; the one I test with is [the "Virtual Display Driver" from itsmikethetech](https://github.com/itsmikethetech/Virtual-Display-Driver) which is forked from [ge9's IddSampleDriver](https://github.com/ge9/IddSampleDriver), it will likely work other forks that share the same IddSampleDriver and *.inf name.
