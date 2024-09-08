@@ -52,11 +52,11 @@ Current Issues / Workarounds:
 
 This software is essentially in beta. This is a quick and dirty tool by design. There is always that chance to find an issue I missed. I will encourage you to let me know if you find any bugs, I can't fix what I don't know is broke!
 
-Planned Features:
-- A UI Theme/Overhaul.
-- A generic installer flow with options for users who do not want an Advanced tool and just want to get up and going.
-- Silent intall via CMD. Creating a CMD syntax to use this tool without the GUI, that way the driver can be configured from other tools. In essence allow operation from a staging tool/sunshine or any process that can load it directly or a .bat that calls it. This will allow users to load initial settings or toggle install/uninstall/reload. Users could bulk configure the drivers for gaming servers with many VMs with specific guests settings in an efficient manner by this feature.
-- Adjust it so that resolutions can be added not by pressing a button but more simply by pressing enter when it (Wt x Ht + Hz) is filled out.
-- Validation of the resolution fields of positive integers only so that jank can not be inserted into the list.
+Planned Features (This section also features priority sorting😅):
+1. Validation of the resolution fields of positive integers only so that jank can not be inserted into the list.
+2. Adding resolutions by pressing enter when (Wt x Ht + Hz) is filled out rather than by pressing a button.
+3. A UI Theme/Overhaul.
+4. Silent intall via CMD. Creating a CMD syntax to use this tool without the GUI, that way the driver can be configured from other tools. In essence allow operation from a staging tool/sunshine or any process that can load it directly or a .bat that calls it. This will allow users to load initial settings or toggle install/uninstall/reload. Users could bulk configure the drivers for gaming servers with many VMs with specific guests settings in an efficient manner by this feature.
+5. A generic installer flow with options for users who do not want an Advanced tool and just want to get up and going.
 
 Disclaimer: The Software provided hereunder ("Software") is licensed "as-is," without warranties of any kind, express or implied. The Softwarer makes no representations regarding the functionality, performance, compatibility, security, or availability of the Software and no warranty. The developer should not be held responsible even if it blatantly be the cause of your dog running off and joining a circus, or your mother wins 5 tickets to Hawaii but you get stuck on a gaming bender and pass it up. The developer should not be held responsible if use of the Virual Display Driver causes you to spend longer hours on the PC and you muff up at your workplace. The developer should equally not be accredited with any responsibility for your experience using this software. All thanks is to those in development of the drivers and their forks, and the OpenSource communities! It's never been a better time than now to be a PC user!
