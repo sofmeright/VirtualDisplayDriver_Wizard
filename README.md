@@ -17,7 +17,7 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 - Configs (Conversion) - Efficiently converts between the xml and text config formats, via injecting them as decribed in [Notes / Hints].
 - Configs (Default) - Pushes the properly named configs from the scripts folder to the C:\IddSampleDriver if not already there.
 - Backups (Save/Load/Inject) - User can Save/Load (User Named) Backups of the .txt & .xml based configs into a Backups folder directly from the GUI. These can also be manipulated in their folder directly (See [Notes / Hints] for further instructions).
-> Note: Additional features such as a GUI Overhaul, CLI, and an Interactive Installer are planned and have been considered prior in the current design philosophy for later implementation.
+> Note: Additional features such as a GUI Overhaul, CLI, and an Interactive Installer are planned. These features have been considered prior to creation of the tool and the design philosophy allows for ease of implementation.
 
 # Installation:
 1. Unpack the exe or the script. Note: To directly execute from the ".ahk" file (plain-text source code), you must install [Autohotkey](https://www.autohotkey.com).
