@@ -1,6 +1,6 @@
 # IDDSample_Wizard
 
-Kai of [PrPlanIT.com](https://kb.precisionplanit.com) presents to you:
+Kai of [PRPlanIT.com](https://kb.precisionplanit.com) presents to you:
 
 Indirect Display Driver Sample: Wizard ~ IDDSample: Wizard
 - A quick and dirty GUI tool for manipulating Indirect Display Driver Sample implementations like the HDR capable ["Virtual Display Driver" from itsmikethetech](https://github.com/itsmikethetech/Virtual-Display-Driver) that works on Windows 10/11.
