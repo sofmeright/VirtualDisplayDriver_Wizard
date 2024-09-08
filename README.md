@@ -29,18 +29,18 @@ Installing:
 - The script/compiled executable should go in the folder where you store your [Virtual Display Drivers (Unpacked)](https://github.com/itsmikethetech/Virtual-Display-Driver), it will need access to them for installation purposes.
 - Driver Installing depends on Microsoft DevCon as part of the [Windows Development Kit](https://download.microsoft.com/download/2/5/f/25f22c34-1cc4-404c-9f92-2ff26cc4ac91/KIT_BUNDLE_WDK_MEDIACREATION/wdksetup.exe) and here's a [FOSS based installer](https://github.com/Drawbackz/DevCon-Installer/releases/tag/1.3) for just devcon (update sources the version its offering may be dated, I did that before a Windows 11 Entry loaded. ALSO make sure to tick the Windows Path Variable option!)
 
-Notes/Hints:
-- At runtime it will load the vdd_settings.xml if present otherwise it will try to load adapter/option.txt. You can also replace/omit these accordingly at C:\IddSampleDriver if you want to workaround this very intended behavior.
-- You can also place any config file with the script but in a folder "Backups" with the filename in the format "option.txt.[backup_title_here].backup", replace accordingly (vdd_settings.xml/option.txt/adapter.txt)
-- You can name a backup whatever you like and place it manually and when you relaunch you can restore from it just as if you backed up from the GUI.
-- What is Priority??? 🤷‍♀️, I made priority up to at least be able to force my preferred aspect ratio at the top of the list due to an issue with Immortals Fenyx Rising [HERE, look to the issues solutions segement and its what I was facing...](http://sh.uni2.cc/28JLJ)
-
 TLDR: Installing... AGAIN
 1. Unpack the script or exe, if you are using the script you will need [Autohotkey](https://www.autohotkey.com) installed.
 2. Unpack the [Virtual Display Drivers](https://github.com/itsmikethetech/Virtual-Display-Driver) into the same folder.
 3. Install Devcon with [Windows Development Kit](https://download.microsoft.com/download/2/5/f/25f22c34-1cc4-404c-9f92-2ff26cc4ac91/KIT_BUNDLE_WDK_MEDIACREATION/wdksetup.exe) or [(this unofficial) DevCon-Installer](https://github.com/Drawbackz/DevCon-Installer/releases/tag/1.3).
 4. Run the exe or script.
 5. How to use it? Read the GUI.
+
+Notes/Hints:
+- At runtime it will load the vdd_settings.xml if present otherwise it will try to load adapter/option.txt. You can also replace/omit these accordingly at C:\IddSampleDriver if you want to workaround this very intended behavior.
+- You can also place any config file with the script but in a folder "Backups" with the filename in the format "option.txt.[backup_title_here].backup", replace accordingly (vdd_settings.xml/option.txt/adapter.txt)
+- You can name a backup whatever you like and place it manually and when you relaunch you can restore from it just as if you backed up from the GUI.
+- What is Priority??? 🤷‍♀️, I made priority up to at least be able to force my preferred aspect ratio at the top of the list due to an issue with Immortals Fenyx Rising [HERE, look to the issues solutions segement and its what I was facing...](http://sh.uni2.cc/28JLJ)
 
 This software is essentially in beta. This is a quick and dirty tool by design. There is always that chance to find an issue I missed. I will encourage you to let me know if you find any bugs, I can't fix what I don't know is broke!
 
