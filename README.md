@@ -23,7 +23,7 @@ Note: Additional features such as CLI and an Interactive Installer are planned a
 
 How did we get here:
 - I use the Virtual Display Driver in my [workstation setup](http://sh.uni2.cc/28JLJ) and at a point I wondered how hard it would be to make a GUI for the driver and in turn I had to figure out how hard it was to finish my thought.
-- I'm sharing this because I am typically a leecher and not a seeder. I use a lot of open source products in my workflow but do not often contribute so I'd be tickled if anyone gets use of this to think even if its a drop in a bucket if I can give even the slightest back.
+- I'm sharing this because I am typically a leecher and not a seeder. I use a lot of open source products in my workflow but do not often contribute. I'd be tickled if anyone gets use of this even if its only a drop-in-the-bucket.
 
 Requirements:
 - This software configures the state of a few implementations of Microsofts Indirect Display Driver Sample, as such a compatible implementation is required; the one I test with is [the VirtualDisplayDriver from itsmikethetech](https://github.com/itsmikethetech/Virtual-Display-Driver) which is forked from [ge9's IddSampleDriver](https://github.com/ge9/IddSampleDriver), it will likely work other forks that share the same IddSampleDriver and *.inf name.
