@@ -1,7 +1,7 @@
 # IDDSampleDriver_Wizard
 Kai @ PPIT presents to you the Virtual Display Driver Wizard.
 
-![image](https://github.com/user-attachments/assets/096ec719-05bf-479f-859c-982d96e99603)
+<img src="https://github.com/sofmeright/IDDSampleDriver_Wizard/blob/main/PPIT-IddSample_Wiz-v0.602-SS_GUI_Advanced.png" width="320" />
 
 What you see is what you get! Very simple prototype. Call it beta. 
 
