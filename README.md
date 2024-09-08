@@ -7,7 +7,7 @@ What you see is what you get! Very simple prototype. Call it beta.
 
 How did we get here:
 - I use the Virtual Display Driver in my [workstation setup](http://sh.uni2.cc/28JLJ) and at a point I wondered how hard it would be to make a GUI for the driver and in turn I had to figure out how hard it was to finish my thought.
-- I'm sharing this because I am typically a leecher and not a seeder so I'd be tickled if anyone gets use of it to think maybe its a drop in a bucket but its giving the slightest back.
+- I'm sharing this because I am typically a leecher and not a seeder. I use a lot of open source products in my workflow but do not often contribute so I'd be tickled if anyone gets use of it to think maybe its a drop in a bucket but its giving the slightest back.
 
 Issues in advance:
 - None that I am aware of at this time.
