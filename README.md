@@ -4,10 +4,21 @@ Kai of [PrPlanIT.com](https://kb.precisionplanit.com) presents to you:
 
 Indirect Display Driver Sample Wizard ~ IddSampleDriver Wizard
 - A quick and dirty GUI tool for manipulating Indirect Display Driver Sample implementations like the HDR capable [VirtualDisplayDriver from itsmikethetech](https://github.com/itsmikethetech/Virtual-Display-Driver) that works on Windows 10/11.
-- What you see is what you get.
-- Additional features such as CLI and an Interactive Installer are planned and considered in the current design philosophy for later implementation.
 
 <img src="https://github.com/sofmeright/IDDSampleDriver_Wizard/blob/main/PPIT-IddSample_Wiz-v0.602-SS_GUI_Advanced.png" width="320" />
+
+Features:
+- Driver (Install / Uninstall / Reload) - Note: Reload has been useful, in my experience using Sunshine; reload did not cause the active session to terminate and refreshed changes.
+- Monitor(s) (Set # of) - Adjusting the amount of virtual displays the driver is providing.
+- RenderingEngine(GPU) (*Detection* & Selection)
+- Resolutions (Adding / Removing) - Note: Removing is done by highlighting and pressing the DELETE key.
+- Resolutions (Grouping of Resolutions) - Resolution enteries containing the same width and hight are sorted by the earliest occurence of that specific (w x h) in the list. ~ This is done so they are in grouped entries when we write out the XML config.
+- Priority (Changing) - The priority of a specific resolution can be set by selecting it and pressing F2 then pressing Enter when finished with the edit. (See: What is priority? in [Notes / Hints].)
+- Configs (Reading / Writing) - Reads and Writes both config formats (.txt & .xml).
+- Configs (Conversion) - Efficiently converts between the xml and text config formats, via injecting them as decribed in [Notes / Hints].
+- Configs (Default) - Pushes the properly named configs from the scripts folder to the C:\IddSampleDriver if not already there.
+- Backups (Save/Load/Inject) - User can Save/Load (User Named) Backups of the .txt & .xml based configs into a Backups folder directly from the GUI. These can also be manipulated in their folder directly (See [Notes / Hints] for further instructions).
+Note: Additional features such as CLI and an Interactive Installer are planned and considered in the current design philosophy for later implementation.
 
 How did we get here:
 - I use the Virtual Display Driver in my [workstation setup](http://sh.uni2.cc/28JLJ) and at a point I wondered how hard it would be to make a GUI for the driver and in turn I had to figure out how hard it was to finish my thought.
@@ -16,17 +27,6 @@ How did we get here:
 Requirements:
 - This software configures the state of a few implementations of Microsofts Indirect Display Driver Sample, as such a compatible implementation is required; the one I test with is [the VirtualDisplayDriver from itsmikethetech](https://github.com/itsmikethetech/Virtual-Display-Driver) which is forked from [ge9's IddSampleDriver](https://github.com/ge9/IddSampleDriver), it likely will work any other fork that shares the same IddSampleDriver and *.inf name.
 - The Driver Installation method I use depends on Microsoft DevCon as part of the [Windows Development Kit](https://download.microsoft.com/download/2/5/f/25f22c34-1cc4-404c-9f92-2ff26cc4ac91/KIT_BUNDLE_WDK_MEDIACREATION/wdksetup.exe) and here's a [FOSS based installer](https://github.com/Drawbackz/DevCon-Installer/releases/tag/1.3) for just devcon (In the FOSS installer: Make sure to TICK the Windows Path Variable option! SELECT ~ Update Sources in the installer: the DevCon version available for install may be dated, I needed this for a Windows 11 Entry to appear.)
-
-Features:
-- Monitor Selection
-- GPU *Detection* and Selection.
-- User named backups
-- Installation/uninstallation/Reload of drivers. (Reload is useful, in Sunshine the time reload takes is not enough to cause the session to terminate)
-- Pushing the configs to the C:\IddSampleDriver if not already there.
-- Efficiently converting between the xml and text config formats, via injecting them as decribed in [Notes / Hints]
-- Sorting your resolutions by priority levels (See: What is priority? in [Notes / Hints].) It shifts resolution entries containing the same width and hight as a group when you are adjusting the "priority".
-- Reading and writing from the files.
-- All core features work, if you find an issue you know where to report it!
 
 Installing...
 1. Unpack the exe or the script | Note: If you are using the ".ahk" plain-text source file, you will need [Autohotkey](https://www.autohotkey.com) installed to execute from it directly.
