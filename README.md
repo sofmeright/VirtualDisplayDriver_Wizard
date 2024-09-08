@@ -49,7 +49,7 @@ Note: This software is essentially in beta. This is a quick and dirty tool by de
 3. A UI Theme/Overhaul.
 4. Silent intall via CMD. Creating a CMD syntax to use this tool without the GUI, that way the driver can be configured from other tools. In essence allow operation from a staging tool/sunshine or any process that can load it directly or a .bat that calls it. This will allow users to load initial settings or toggle install/uninstall/reload. Users could bulk configure the drivers for gaming servers with many VMs with specific guests settings in an efficient manner by this feature.
 5. A generic installer flow with options for users who do not want an Advanced tool and just want to get up and going.
-6. Found [a fork](https://github.com/timminator/Virtual-Display-Driver) of the Virtual Display Driver installer that has a interactive installer, they cite that they used [nefcon](https://github.com/nefarius/nefcon), will prospect this as an alternative install/uninstall/reload method if it can provide the reload feature it may be easier to package than devcon. 
+6. Found [a fork](https://github.com/timminator/Virtual-Display-Driver) of the Virtual Display Driver that has a interactive installer albeit less utilitarian than this, they cite that they used [nefcon](https://github.com/nefarius/nefcon), will prospect this as an alternative install/uninstall/reload method if it can provide the reload feature it may be easier to package than devcon. 
   
 ### How did we get here:
 - I use the Virtual Display Driver in my [workstation setup](http://sh.uni2.cc/28JLJ) and at a point I wondered how hard it would be to make a GUI for the driver and in turn I had to figure out how hard it was to finish my thought.
