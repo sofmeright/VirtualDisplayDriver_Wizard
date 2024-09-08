@@ -1,9 +1,11 @@
 # IDDSampleDriver_Wizard
-Kai @ PPIT presents to you the Virtual Display Driver Wizard.
+
+Kai of PrPlanIT.com presents to you:
+
+Indirect Display Driver Sample Wizard ~ IddSampleDriver Wizard
+- A quick and dirty GUI tool for manipulating Indirect Display Driver Sample implementations like the [VirtualDisplayDriver from itsmikethetech](https://github.com/itsmikethetech/Virtual-Display-Driver). What you see is what you get. Additional features such as CLI and an Interactive Installer are planned.
 
 <img src="https://github.com/sofmeright/IDDSampleDriver_Wizard/blob/main/PPIT-IddSample_Wiz-v0.602-SS_GUI_Advanced.png" width="320" />
-
-What you see is what you get! Very simple prototype. Call it beta. 
 
 How did we get here:
 - I use the Virtual Display Driver in my [workstation setup](http://sh.uni2.cc/28JLJ) and at a point I wondered how hard it would be to make a GUI for the driver and in turn I had to figure out how hard it was to finish my thought.
