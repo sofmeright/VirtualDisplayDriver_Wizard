@@ -11,7 +11,7 @@ How did we get here:
 Issues in advance:
 - None that I am aware of at this time.
 - OH WAIT UGLY -> UGLY UI is AN ISSUE! Whats up next? A GUI rework!
-- Spoke too soon, I will fix this next: Solution - In order to have the selected RenderEngine (or Monitor Count) save to file, you will need to edit a priority. (You can even press F2 then Press ENTER) There is no logic to detect when a user makes a selection in the combo box and in turn to write to file. For now its recommended to use this temporary workaround.
+- Spoke too soon, I will fix this next: Solution - In order to have the selected RenderEngine (or Monitor Count) save to file, you will need to edit a priority (or add a resolution). (You can even press F2 then Press ENTER) There is no logic to detect when a user makes a selection in the combo box and in turn to write to file. For now its recommended to use this temporary workaround.
 
 Things that work:
 - User named backups feature
