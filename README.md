@@ -6,7 +6,7 @@ Virtual Display Driver: Wizard
 - A quick and dirty GUI tool for manipulation (Install / Uninstall / Reload / Configure) of Indirect Display Driver Sample (IddSample) implementations like the HDR capable [Virtual Display Driver from itsmikethetech](https://github.com/itsmikethetech/Virtual-Display-Driver) that works on Windows 10/11. This installer/configuration tool is intended to provide a more elegant solution in place of needing to edit configs or use Device Manger for driver installation.
 
 
-<img src="https://github.com/sofmeright/IDDSampleDriver_Wizard/blob/main/PPIT-IddSample_Wiz-v0.602-SS_GUI_Advanced.png" width="140" />
+<img src="https://github.com/sofmeright/IDDSampleDriver_Wizard/blob/main/PPIT-IddSample_Wiz-v0.602-SS_GUI_Advanced.png" width="200" />
 
 Features:
 - Driver (Install / Uninstall / Reload) - Note: Reload has been useful, in my experience using Sunshine; reload did not cause the active session to terminate and refreshed changes.
