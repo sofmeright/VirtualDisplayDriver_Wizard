@@ -4,7 +4,7 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 > A quick and dirty GUI tool for manipulation (Install / Uninstall / Reload / Configure) of Indirect Display Driver Sample (IddSample) implementations like the HDR capable <a href="https://github.com/itsmikethetech/Virtual-Display-Driver">Virtual Display Driver from itsmikethetech</a> that works on Windows 10/11. This installer/configuration tool is intended to provide a more elegant solution in place of needing to edit configs or use Device Manger for driver installation.
 
 
-<img src="https://github.com/sofmeright/IDDSampleDriver_Wizard/blob/main/PPIT-IddSample_Wiz-v0.602-SS_GUI_Advanced.png" width="220" />
+<img src="https://github.com/sofmeright/IDDSampleDriver_Wizard/blob/main/PPIT-IddSample_Wiz-SS_GUI_Advanced.png" width="220" />
 
 ### How did we get here:
 > I use the Virtual Display Driver in my [workstation setup](http://sh.uni2.cc/28JLJ) and at a point I wondered how hard it would be to make a GUI for the driver and in turn I had to figure out how hard it was to finish my thought.
