@@ -38,7 +38,6 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 
 ### Current Issues / Workarounds:
 - None that I am aware of at this time.
-- OH WAIT UGLY -> UGLY UI is AN ISSUE! Whats up next? A GUI rework!
 - Spoke too soon, I will fix this next: Solution - In order to have the selected RenderEngine (or Monitor Count) save to file, you will need to edit a priority (or add a resolution). (You can even press F2 then Press ENTER) There is no logic to detect when a user makes a selection in the combo box and in turn to write to file. For now its recommended to use this temporary workaround.
 - Does not automatically select the first detected RenderEngine as a default when you first run it if none are selected. This will be implemented soon, just select it and then change a priority or add a resolution for now.
 > Note: This software is essentially in beta. This is a quick and dirty tool by design. There is always that chance to find an issue I missed. I will encourage you to let me know if you find any bugs, I can't fix what I don't know is broke!
@@ -47,8 +46,6 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 > Validation of the resolution fields of positive integers only so that jank can not be inserted into the list.
 >
 > Adding resolutions by pressing enter when (Wt x Ht + Hz) is filled out rather than by pressing a button.
->
-> UI Overhaul.
 >
 > Silent intall via CMD. Creating a CMD syntax to use this tool without the GUI, that way the driver can be configured from other tools. In essence allow operation from a staging tool/sunshine or any process that can load it directly or a .bat that calls it. This will allow users to load initial settings or toggle install/uninstall/reload. Users could bulk configure the drivers for gaming servers with many VMs with specific guests settings in an efficient manner by this feature.
 >
