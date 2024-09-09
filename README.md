@@ -49,6 +49,13 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 >
 > Silent intall via CMD. Creating a CMD syntax to use this tool without the GUI, that way the driver can be configured from other tools. In essence allow operation from a staging tool/sunshine or any process that can load it directly or a .bat that calls it. This will allow users to load initial settings or toggle install/uninstall/reload. Users could bulk configure the drivers for gaming servers with many VMs with specific guests settings in an efficient manner by this feature.
 >
+> CMD Arguements: (Although not yet released we are currently developing this feature, the proposed CLI syntax is below)
+> Driv_Inst / Driv_Unin / Driv_Relo - Install/Uninstall/Reload the driver respectively.
+> [Back_Load / Back_Save / Back_Remo] <Name> - Load/Save/Remove Backup entries for the given name.
+> Moni_Sets <integer> - Sets the number of monitors
+> GPUs_Sets <String or integer> - Sets the GPU to the given GPU name or if an integer by the GPU Detection number.
+> [Resl_Adds / Resl_Remo] <%SUNSHINE_CLIENT_WIDTH%,%SUNSHINE_CLIENT_HEIGHT%,%SUNSHINE_CLIENT_FPS%> - When a string is passed in containing comma seperated %width%,%hight%,%Refresh% it adds it to the top of the list (even if it already exists).
+>
 > A generic installer flow with options for users who do not want an Advanced tool and just want to get up and going.
 >
 > Found [a fork](https://github.com/timminator/Virtual-Display-Driver) of the Virtual Display Driver that has a interactive installer albeit less utilitarian than this, they cite that they used [nefcon](https://github.com/nefarius/nefcon), will prospect this as an alternative install/uninstall/reload method if it can provide the reload feature it may be easier to package than devcon. 
