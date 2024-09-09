@@ -53,11 +53,11 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 >
 > [Driv_Inst / Driv_Unin / Driv_Relo] - These commands will Install / Uninstall / Reload the driver respectively.
 >
-> [Back_Load / Back_Save / Back_Remo] <Name> - Will Load/Save/Remove Backup entries for the given name.
+> [Back_Load / Back_Save / Back_Remo] <Name> - Will Load/Save/Remove Backup entries for the given name (in quotes if it contains spaces).
 >
 > Moni_Sets <integer> - Sets the number of monitors
 >
-> GPUs_Sets <String or integer> - Sets the GPU to the given GPU name or if an integer by the GPU Detection number.
+> GPUs_Sets <String or integer> - Sets the GPU to the given GPU name or if an integer by the GPU Detection number (in quotes if it contains spaces).
 >
 > [Resl_Adds / Resl_Remo] <%SUNSHINE_CLIENT_WIDTH%,%SUNSHINE_CLIENT_HEIGHT%,%SUNSHINE_CLIENT_FPS%> - When a string is passed in containing comma seperated %width%,%hight%,%Refresh% it adds it to the top of the list (even if it already exists).
 >
