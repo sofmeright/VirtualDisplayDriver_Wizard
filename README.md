@@ -56,11 +56,9 @@ To use command line arguments with the script you will need to pipe it through A
 
 <img src="https://github.com/sofmeright/IDDSampleDriver_Wizard/blob/main/PPIT-IddSample_Wiz-SS_Sunshine_Integration.png" width="300" />
 
-> For some strange reason its possible to execute this with a .bat but not directly from Sunshine and it is not a syntax issue, I tried changing the syntax to have spaces between width,hight,hz. Other stuff.
->
-> Make sure to check the config.elevated option, admin is needed for Driver Reloading, the tool will not run w/o elevation.
->
-> Point the sunshine command to the SunshineIntegration.bat, then afterwards run qres to set the resolution and all your clients will automatically add any resolution that they request. There are FOSS HDR togglers available afaik as well.
+- For some strange reason its possible to execute this with a .bat but not directly from Sunshine and it is not a syntax issue as we are passing the same syntax to a .bat.
+- Make sure to check the config.elevated option, admin is needed for Driver Reloading, the tool will not run w/o elevation.
+- Point the sunshine command to the SunshineIntegration.bat, then afterwards run qres to set the resolution and all your clients will automatically add any resolution that they request. There are FOSS HDR togglers available afaik as well.
 >
 > cmd /C SunshineIntegration.bat %SUNSHINE_CLIENT_WIDTH% %SUNSHINE_CLIENT_HEIGHT% %SUNSHINE_CLIENT_FPS%
 
