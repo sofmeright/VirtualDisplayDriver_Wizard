@@ -14,9 +14,9 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 - Driver (Install / Uninstall / Reload) - Note: Reload has been useful, in my experience using Sunshine; reload did not cause the active session to terminate and refreshed changes.
 - Monitor(s) (Set # of) - Adjusting the amount of virtual displays the driver is providing.
 - RenderingEngine(GPU) (*Detection* & Selection)
-- Resolutions (Adding / Removing) - Note: Removing is done by highlighting and pressing the DELETE key.
+- Resolutions (Adding / Removing)
 - Resolutions (Grouping of Resolutions) - Resolution enteries containing the same [width x hight] are sorted by the earliest occurence of that specific [w x h] in the list. ~ This is done so they are in grouped entries when we write out the XML config.
-- Priority (Changing) - The priority of a specific resolution can be set by selecting it and pressing F2 then pressing Enter when finished with the edit. (See: What is priority? in [Notes / Hints])
+- Priority (Changing) - (See: What is priority? in [Notes / Hints])
 - Configs (Reading / Writing) - Reads and Writes both config formats (.txt & .xml).
 - Configs (Conversion) - Efficiently converts between the xml and text config formats, via injecting them as decribed in [Notes / Hints].
 - Configs (Default) - Pushes the properly named configs from the scripts folder to the C:\IddSampleDriver if not already there.
