@@ -21,7 +21,20 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 - Configs (Conversion) - Efficiently converts between the xml and text config formats, via injecting them as decribed in [Notes / Hints].
 - Configs (Default) - Pushes the properly named configs from the scripts folder to the C:\IddSampleDriver if not already there.
 - Backups (Save/Load/Inject) - User can Save/Load (User Named) Backups of the .txt & .xml based configs into a Backups folder directly from the GUI. These can also be manipulated in their folder directly (See [Notes / Hints] for further instructions).
-> Note: Additional features such as a GUI Overhaul, CLI, and an Interactive Installer are planned. These features have been considered prior to creation of the tool and the design philosophy allows for ease of implementation.
+
+### CMD Arguements:
+The following directives are for configuring the Virtual Display Driver from other tools. You can call the script/exe from a staging tool/sunshine ~ any process that loads it directly or a .bat that can calls it. This will allow you to load initial settings or toggle install/uninstall/reload. Advanced users should be able to bulk configure the drivers for multiple hosts/clients in an efficient manner by this feature.
+> [Driv_Inst / Driv_Unin / Driv_Relo] - These commands will Install / Uninstall / Reload the driver respectively.
+>
+> [Back_Load / Back_Save / Back_Remo] \<Name\> - Will Load/Save/Remove Backup entries for the given name (in quotes if it contains spaces).
+>
+> Moni_Sets <integer> - Sets the number of monitors
+>
+> GPUs_Sets \<String or integer\> - Sets the GPU to the given GPU name or if an integer by the GPU Detection number (in quotes if it contains spaces).
+>
+> [Reso_Adds / Reso_Remo] \<%SUNSHINE_CLIENT_WIDTH%,%SUNSHINE_CLIENT_HEIGHT%,%SUNSHINE_CLIENT_FPS%\> - When a string is passed in containing comma seperated %width%,%hight%,%Refresh% it adds it to the top of the list (even if it already exists).
+>
+> Note: Additional features such as an Interactive Installer are planned. These features have been considered prior to creation of the tool and the design philosophy allows for ease of implementation.
 
 # Installation:
 1. Unpack the .exe or the .ahk source file. Note: If you wish to use the ".ahk" file (plain-text source code), you must install [Autohotkey](https://www.autohotkey.com).
@@ -47,20 +60,6 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 > Validation of the resolution fields of positive integers only so that jank can not be inserted into the list.
 >
 > Adding resolutions by pressing enter when (Wt x Ht + Hz) is filled out rather than by pressing a button.
->
-> Silent intall via CMD. Creating a CMD syntax to use this tool without the GUI, that way the driver can be configured from other tools. In essence allow operation from a staging tool/sunshine or any process that can load it directly or a .bat that calls it. This will allow users to load initial settings or toggle install/uninstall/reload. Users could bulk configure the drivers for gaming servers with many VMs with specific guests settings in an efficient manner by this feature.
->
-> CMD Arguements: (Although not yet released we are currently developing this feature, the proposed CLI syntax is below)
->
-> [Driv_Inst / Driv_Unin / Driv_Relo] - These commands will Install / Uninstall / Reload the driver respectively.
->
-> [Back_Load / Back_Save / Back_Remo] <Name> - Will Load/Save/Remove Backup entries for the given name (in quotes if it contains spaces).
->
-> Moni_Sets <integer> - Sets the number of monitors
->
-> GPUs_Sets <String or integer> - Sets the GPU to the given GPU name or if an integer by the GPU Detection number (in quotes if it contains spaces).
->
-> [Resl_Adds / Resl_Remo] <%SUNSHINE_CLIENT_WIDTH%,%SUNSHINE_CLIENT_HEIGHT%,%SUNSHINE_CLIENT_FPS%> - When a string is passed in containing comma seperated %width%,%hight%,%Refresh% it adds it to the top of the list (even if it already exists).
 >
 > A generic installer flow with options for users who do not want an Advanced tool and just want to get up and going.
 >
