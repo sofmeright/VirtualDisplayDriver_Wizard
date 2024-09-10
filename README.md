@@ -24,7 +24,7 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 > Note: Additional features such as an Interactive Installer are planned. These features have been considered prior to creation of the tool and the design philosophy allows for ease of implementation.
 
 ### CMD Arguements:
-The following directives are for configuring the Virtual Display Driver from other tools. You can call the script/exe from a staging tool/sunshine ~ any process that loads it directly or a .bat that can calls it. This will allow you to load initial settings or toggle install/uninstall/reload. Advanced users should be able to bulk configure the drivers for multiple hosts/clients in an efficient manner by this feature.
+The following directives are for configuring the Virtual Display Driver from other tools. You can call the script/exe from a staging tool/sunshine with Admin Credentials ~ any process that loads it directly or a .bat that can calls it. This will allow you to load initial settings or toggle install/uninstall/reload. Advanced users should be able to bulk configure the drivers for multiple hosts/clients in an efficient manner by this feature.
 To use command line arguments with the script you will need to pipe it through Autohotkey itself like such (otherwise directly after the .exe): 
 > "C:\Program Files (x86)\AutoHotkey\AutoHotkey.exe" "C:\\_Staging\_Utilities\IddSampleDriver\PRPlanIT.com-VirtualDisplayDrv_Wiz.ahk" Reso_Adds 2560,1440,240
 - [Driv_Inst / Driv_Unin / Driv_Relo] - These commands will Install / Uninstall / Reload the driver respectively.
