@@ -60,6 +60,8 @@ To use command line arguments with the script you will need to pipe it through A
 ### Planned Features:
 > Validation of the resolution fields of positive integers only so that jank can not be inserted into the list.
 >
+> Automatically selecting a default GPU when nothing is selected. Meant to add this already. Whoops!
+> 
 > Adding resolutions by pressing enter when (Wt x Ht + Hz) is filled out rather than by pressing a button.
 >
 > A generic installer flow with options for users who do not want an Advanced tool and just want to get up and going.
