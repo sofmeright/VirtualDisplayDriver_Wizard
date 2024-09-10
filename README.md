@@ -51,8 +51,10 @@ To use command line arguments with the script you will need to pipe it through A
 - You can name a backup whatever you like and place it manually and when you relaunch you can restore from it just as if you backed up from the GUI.
 - But WHAT is *Priority*??? 🤷‍♀️ - I made it up ~ for the purpose of forcing a preferred [width x hight + Hz] to the top of the list. The resulting / only workable solution to accomplish this was a bit more robust than I initially desired (See: Features - Grouping of Resolutions), but nonetheless it resolves an issue I had with Immortals Fenyx Rising that may or may not affect other games or software. [HERE in the issues/solutions segement, I briefly describe the issue...](http://sh.uni2.cc/28JLJ)
 
-### Setting up sunshine integration:
+### Integrating the tool with Sunshine:
+
 <img src="https://github.com/sofmeright/IDDSampleDriver_Wizard/blob/main/PPIT-IddSample_Wiz-SS_Sunshine_Integration.png" width="300" />
+
 > Make sure to check the config.elevated option, admin is needed for Driver Reloading, the tool will not run w/o elevation.
 
 ### Current Issues / Workarounds:
