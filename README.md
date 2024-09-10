@@ -36,7 +36,7 @@ To use command line arguments with the script you will need to pipe it through A
 > VirtualDisplayDrv.exe Moni_Sets \<integer\>
 - Sets the GPU to the given GPU name or if an integer by the GPU Detection number (in quotes if it contains spaces).
 > VirtualDisplayDrv.exe GPUs_Sets \<String or integer\> 
-- When a string is passed in containing comma seperated %width% %hight% %Refresh% it adds it to the top of the list (even if it already exists).
+- When a string is passed in containing %width% %hight% %Refresh% it adds it to the top of the list (even if it already exists).
 > VirtualDisplayDrv.exe [Reso_Adds / Reso_Remo] \<WIDTH\> \<HEIGHT\> \<Hz\> 
 
 # Installation:
