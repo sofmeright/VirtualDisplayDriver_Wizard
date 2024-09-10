@@ -75,6 +75,8 @@ To use command line arguments with the script you will need to pipe it through A
 > 
 > Adding resolutions by pressing enter when (Wt x Ht + Hz) is filled out rather than by pressing a button.
 >
+> Automatically Unintalling/installing the certificate within the Driver Install/Uninstall flows.
+> 
 > A generic installer flow with options for users who do not want an Advanced tool and just want to get up and going.
 >
 > Found [a fork](https://github.com/timminator/Virtual-Display-Driver) of the Virtual Display Driver that has a interactive installer albeit less utilitarian than this, they cite that they used [nefcon](https://github.com/nefarius/nefcon), will prospect this as an alternative install/uninstall/reload method if it can provide the reload feature it may be easier to package than devcon. (In our review we found issues specifically with reload/uninstall using nefcon, even as found implemented in timinators git. Please raise an issue if you want to help!)
