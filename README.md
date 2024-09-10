@@ -52,8 +52,9 @@ To use command line arguments with the script you will need to pipe it through A
 - But WHAT is *Priority*??? 🤷‍♀️ - I made it up ~ for the purpose of forcing a preferred [width x hight + Hz] to the top of the list. The resulting / only workable solution to accomplish this was a bit more robust than I initially desired (See: Features - Grouping of Resolutions), but nonetheless it resolves an issue I had with Immortals Fenyx Rising that may or may not affect other games or software. [HERE in the issues/solutions segement, I briefly describe the issue...](http://sh.uni2.cc/28JLJ)
 
 ### Current Issues / Workarounds:
-- None that I am aware of at this time.
 - AFAIK I haven't closed the issue that it requires reload of GUI to show new backups in the dropdown if another selection is made after Saving them.
+- File writes/Priority Sorting is happening with out any loading screens. This is my preferred experience. However, due to this; if you change things really fast in a swift sequence if it was writing or sorting while you did that it may not have been unable to update the file. If you make sure there is some time like 3 seconds between your last change you will be fine even if you go fast. CLI usage is unaffected. If it is bothersome I can add a loading screen in between writes, I resolved this already by simply hiding the GUI until its ready to change again, but I didn't like that. If this troubles you, raise an issue.
+- You will have a generally good experience in the GUI, just be aware of this above limitation. Resolving this issue without changing the current feel of the application will take a entire recode of the way I am implementing the backend for resolutions entries. It can be on the roadmap, especially if this tool becomes more adopted.
 > Note: This software is essentially in beta. This is a quick and dirty tool by design. There is always that chance to find an issue I missed. I will encourage you to let me know if you find any bugs, I can't fix what I don't know is broke!
 
 ### Planned Features:
