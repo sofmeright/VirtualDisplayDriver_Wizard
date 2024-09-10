@@ -53,9 +53,7 @@ To use command line arguments with the script you will need to pipe it through A
 
 ### Current Issues / Workarounds:
 - None that I am aware of at this time.
-- Spoke too soon, I will fix this next: Solution - In order to have the selected RenderEngine (or Monitor Count) save to file, you will need to edit a priority (or add a resolution). (You can even press F2 then Press ENTER) There is no logic to detect when a user makes a selection in the combo box and in turn to write to file. For now its recommended to use this temporary workaround.
-- Does not automatically select the first detected RenderEngine as a default when you first run it if none are selected. This will be implemented soon, just select it and then change a priority or add a resolution for now.
-- Requires reload of GUI to show new backups in the dropdown if another selection is made after Saving them.
+- AFAIK I haven't closed the issue that it requires reload of GUI to show new backups in the dropdown if another selection is made after Saving them.
 > Note: This software is essentially in beta. This is a quick and dirty tool by design. There is always that chance to find an issue I missed. I will encourage you to let me know if you find any bugs, I can't fix what I don't know is broke!
 
 ### Planned Features:
