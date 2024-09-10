@@ -26,12 +26,17 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 ### CMD/CLI Arguements:
 You can call the script/exe from a staging tool/sunshine with Admin Credentials ~ any process that loads it directly or a .bat that can calls it. This will allow you to load initial settings or toggle install/uninstall/reload.
 To use command line arguments with the script you will need to pipe it through Autohotkey first (otherwise directly after the .exe): 
-> "C:\Program Files (x86)\AutoHotkey\AutoHotkey.exe" "C:\\_Staging\_Utilities\IddSampleDriver\PRPlanIT.com-VirtualDisplayDrv_Wiz.ahk" Reso_Adds 2560,1440,240
-- VirtualDisplayDrv.exe [Driv_Inst / Driv_Unin / Driv_Relo] - These commands will Install / Uninstall / Reload the driver respectively.
-- VirtualDisplayDrv.exe [Back_Load / Back_Save / Back_Remo] \<Name\> - Will Load/Save/Remove Backup entries for the given name (in quotes if it contains spaces).
-- VirtualDisplayDrv.exe Moni_Sets                           \<integer\> - Sets the number of monitors
-- VirtualDisplayDrv.exe GPUs_Sets                           \<String or integer\> - Sets the GPU to the given GPU name or if an integer by the GPU Detection number (in quotes if it contains spaces).
-- VirtualDisplayDrv.exe [Reso_Adds / Reso_Remo]             \<%SUNSHINE_CLIENT_WIDTH%,%SUNSHINE_CLIENT_HEIGHT%,%SUNSHINE_CLIENT_FPS%\> - When a string is passed in containing comma seperated %width%,%hight%,%Refresh% it adds it to the top of the list (even if it already exists).
+> "C:\Program Files (x86)\AutoHotkey\AutoHotkey.exe" "C:\\_Staging\_Utilities\IddSampleDriver\PRPlanIT.com-VirtualDisplayDrv_Wiz.ahk" Reso_Adds %SUNSHINE_CLIENT_WIDTH%,%SUNSHINE_CLIENT_HEIGHT%,%SUNSHINE_CLIENT_FPS%
+- Install / Uninstall / Reload the driver.
+> VirtualDisplayDrv.exe [Driv_Inst / Driv_Unin / Driv_Relo]
+- Load/Save/Remove Backup entries for the given name (in quotes if it contains spaces).
+> VirtualDisplayDrv.exe [Back_Load / Back_Save / Back_Remo] \<Name\>
+- Sets the number of monitors
+> VirtualDisplayDrv.exe Moni_Sets \<integer\>
+- Sets the GPU to the given GPU name or if an integer by the GPU Detection number (in quotes if it contains spaces).
+> VirtualDisplayDrv.exe GPUs_Sets \<String or integer\> 
+- When a string is passed in containing comma seperated %width%,%hight%,%Refresh% it adds it to the top of the list (even if it already exists).
+> VirtualDisplayDrv.exe [Reso_Adds / Reso_Remo] \<WIDTH\>,\<HEIGHT\>,\<Hz\> 
 
 # Installation:
 1. Unpack the .exe or the .ahk source file. Note: If you wish to use the ".ahk" file (plain-text source code), you must install [Autohotkey](https://www.autohotkey.com).
