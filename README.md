@@ -26,7 +26,7 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 ### CMD/CLI Arguements:
 You can call the script/exe from a staging tool/sunshine with Admin Credentials ~ any process that loads it directly or a .bat that can calls it. This will allow you to load initial settings or toggle install/uninstall/reload.
 To use command line arguments with the script you will need to pipe it through Autohotkey first (otherwise directly after the .exe): 
-> "C:\Program Files (x86)\AutoHotkey\AutoHotkey.exe" "C:\\_Staging\_Utilities\IddSampleDriver\PRPlanIT.com-VirtualDisplayDrv_Wiz.ahk" Reso_Adds %SUNSHINE_CLIENT_WIDTH% %SUNSHINE_CLIENT_HEIGHT% %SUNSHINE_CLIENT_FPS%
+> cmd /C SunshineIntegration.bat %SUNSHINE_CLIENT_WIDTH% %SUNSHINE_CLIENT_HEIGHT% %SUNSHINE_CLIENT_FPS%
 - Install / Uninstall / Reload the driver.
 > VirtualDisplayDrv.exe [Driv_Inst / Driv_Unin / Driv_Relo]
 - Load/Save/Remove Backup entries for the given name (in quotes if it contains spaces).
@@ -56,8 +56,11 @@ To use command line arguments with the script you will need to pipe it through A
 <img src="https://github.com/sofmeright/IDDSampleDriver_Wizard/blob/main/PPIT-IddSample_Wiz-SS_Sunshine_Integration.png" width="300" />
 
 > For some strange reason its possible to execute this with a .bat but not directly from Sunshine and it is not a syntax issue, I tried changing the syntax to have spaces between width,hight,hz. Other stuff.
+>
 > Make sure to check the config.elevated option, admin is needed for Driver Reloading, the tool will not run w/o elevation.
+>
 > Point the sunshine command to the SunshineIntegration.bat, then afterwards run qres to set the resolution and all your clients will automatically add any resolution that they request. There are FOSS HDR togglers available afaik as well.
+>
 > cmd /C SunshineIntegration.bat %SUNSHINE_CLIENT_WIDTH% %SUNSHINE_CLIENT_HEIGHT% %SUNSHINE_CLIENT_FPS%
 
 ### Current Issues / Workarounds:
