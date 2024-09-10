@@ -55,6 +55,7 @@ To use command line arguments with the script you will need to pipe it through A
 
 <img src="https://github.com/sofmeright/IDDSampleDriver_Wizard/blob/main/PPIT-IddSample_Wiz-SS_Sunshine_Integration.png" width="300" />
 
+> Ooops I thought it was good to go, looks like sunshine needs spaces between percent signs. I will be rebuilding my resolution add command. Otherwise there is a .bat integration file I got working temporarily while trying to determine why it works in CLI but not in Sunshine...
 > Make sure to check the config.elevated option, admin is needed for Driver Reloading, the tool will not run w/o elevation.
 > Setup Reso_Adds then a Driv_Relo command, then afterwards run qres to set the resolution and all your clients will automatically add any resolution that they request. There are FOSS HDR togglers available afaik as well.
 
