@@ -11,6 +11,7 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 > I'm sharing this because I am typically a leecher and not a seeder. I use a lot of open source products in my workflow but do not often contribute. I'd be tickled if anyone gets use of this even if its only a drop-in-the-bucket.
 
 ### Features:
+- Sunshine Integration - Automatic resolution adding / switching with combination of sunshine commands and qres.
 - Driver (Install / Uninstall / Reload) - Note: Reload has been useful, in my experience using Sunshine; reload did not cause the active session to terminate and refreshed changes.
 - Monitor(s) (Set # of) - Adjusting the amount of virtual displays the driver is providing.
 - RenderingEngine(GPU) (*Detection* & Selection)
