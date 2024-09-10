@@ -1,7 +1,7 @@
 Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 
 # Virtual Display Driver: Wizard
-> A GUI tool for manipulation (Install / Uninstall / Reload / Configure) of Indirect Display Driver Sample (IddSample) implementations like the HDR capable <a href="https://github.com/itsmikethetech/Virtual-Display-Driver">Virtual Display Driver from itsmikethetech</a> that works on Windows 10/11. This installer/configuration tool is intended to provide a more elegant solution in place of needing to edit configs or use Device Manger for driver installation.
+> A GUI tool that is extensible to other software such as Sunshine for manipulation (Install / Uninstall / Reload / Configure) of Indirect Display Driver Sample (IddSample) implementations like the HDR capable <a href="https://github.com/itsmikethetech/Virtual-Display-Driver">Virtual Display Driver from itsmikethetech</a> that works on Windows 10/11. This installer/configuration tool is intended to provide a more elegant solution in place of needing to edit configs or use Device Manger for driver installation.
 
 
 <img src="https://github.com/sofmeright/IDDSampleDriver_Wizard/blob/main/PPIT-IddSample_Wiz-SS_GUI_Advanced.png" width="300" />
@@ -50,6 +50,10 @@ To use command line arguments with the script you will need to pipe it through A
 - You can also place any config file with the script but in a folder "Backups" with the filename in the format "option.txt.[backup_title_here].backup", replace accordingly (vdd_settings.xml/option.txt/adapter.txt)
 - You can name a backup whatever you like and place it manually and when you relaunch you can restore from it just as if you backed up from the GUI.
 - But WHAT is *Priority*??? 🤷‍♀️ - I made it up ~ for the purpose of forcing a preferred [width x hight + Hz] to the top of the list. The resulting / only workable solution to accomplish this was a bit more robust than I initially desired (See: Features - Grouping of Resolutions), but nonetheless it resolves an issue I had with Immortals Fenyx Rising that may or may not affect other games or software. [HERE in the issues/solutions segement, I briefly describe the issue...](http://sh.uni2.cc/28JLJ)
+
+### Setting up sunshine integration:
+<img src="https://github.com/sofmeright/IDDSampleDriver_Wizard/blob/main/PPIT-IddSample_Wiz-SS_Sunshine_Integration.png" width="300" />
+> Make sure to check the config.elevated option, admin is needed for Driver Reloading, the tool will not run w/o elevation.
 
 ### Current Issues / Workarounds:
 - AFAIK I haven't closed the issue that it requires reload of GUI to show new backups in the dropdown if another selection is made after Saving them.
