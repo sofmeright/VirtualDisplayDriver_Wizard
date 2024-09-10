@@ -56,6 +56,7 @@ To use command line arguments with the script you will need to pipe it through A
 <img src="https://github.com/sofmeright/IDDSampleDriver_Wizard/blob/main/PPIT-IddSample_Wiz-SS_Sunshine_Integration.png" width="300" />
 
 > Make sure to check the config.elevated option, admin is needed for Driver Reloading, the tool will not run w/o elevation.
+> Setup Reso_Adds then a Driv_Relo command, then afterwards run qres to set the resolution and all your clients will automatically add any resolution that they request. There are FOSS HDR togglers available afaik as well.
 
 ### Current Issues / Workarounds:
 - AFAIK I haven't closed the issue that it requires reload of GUI to show new backups in the dropdown if another selection is made after Saving them.
