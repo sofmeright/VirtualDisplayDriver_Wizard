@@ -26,7 +26,8 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 
 ### CMD/CLI Arguements:
 You can call the script/exe from a staging tool/sunshine with Admin Credentials ~ any process that loads it directly or a .bat that can call it. This will allow you to load initial settings or toggle install/uninstall/reload.
-To use command line arguments with the script you will need to pipe it through Autohotkey first (otherwise directly after the .exe): 
+To use command line arguments with the script you will need to pipe it through Autohotkey first (otherwise directly after the .exe).
+- Adding resolutions dynamically via sunshine (reloads the driver automagically). 
 > cmd /C SunshineIntegration.bat %SUNSHINE_CLIENT_WIDTH% %SUNSHINE_CLIENT_HEIGHT% %SUNSHINE_CLIENT_FPS%
 - Install / Uninstall / Reload the driver.
 > VirtualDisplayDrv.exe [Driv_Inst / Driv_Unin / Driv_Relo]
