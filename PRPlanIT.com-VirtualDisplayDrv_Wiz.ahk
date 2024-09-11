@@ -35,21 +35,21 @@ Gui, New
 GUISetColor("2f1c35", "00f19d")
 Gui, Add, Text, xm c00f19d, Kai of Kb.PrecisionPlanIT.com presents: `nVirtual Display Driver: Wizard
 
-Gui, Add, Text, xm c00f19d, Driver:%A_Space%%A_Space%%A_Space%%A_Space%%A_Space%
+Gui, Add, Text, xm w44 c00f19d, Driver:
 Gui, Add, Button, x+m gDriverInstall, Install
 Gui, Add, Button, x+m gDriverUnInstall, Uninstall
 Gui, Add, Button, x+m gDriverReload, Reload
 
-Gui, Add, Text, xm c00f19d, Backup:%A_Space%%A_Space%
+Gui, Add, Text, xm w44 c00f19d, Backup:
 Gui, Add, ComboBox, x+m yp W153 vBackupFileSel HwndCBBackup, Default||
 LoadBackupEntries()
 Gui, Add, Button, xp y+m gBackupLoad, Load
 Gui, Add, Button, x+m yp gBackupSave, Save
 
-Gui, Add, Text, xm section c00f19d, GPU:%A_Space%%A_Space%%A_Space%%A_Space%%A_Space%%A_Space%%A_Space%
+Gui, Add, Text, xm w44 section c00f19d, GPU:
 Gui, Add, ListBox, ys W153 vRenderingEngine gRenderSelected, %VideoControllers% ;|Nvidia GeForce 1080ti ; For TESTING, add another fake gpu entry
 
-Gui, Add, Text, xs section c00f19d, Monitors:
+Gui, Add, Text, xs w44 section c00f19d, Monitors:
 Gui, Add, Edit, ys W153 vMonitorCount gMonitorCSelect, 
 Gui, Add, UpDown, Range1-100,
 
@@ -465,16 +465,28 @@ DriverReload()
 }
 
 CMDtoSTDOut(command) {
-    ; WshShell object: http://msdn.microsoft.com/en-us/library/aew9yb99 ¬
+	detecthiddenwindows on
+	run %comspec% /k ,, hide useerrorlevel, pid
+	winwait ahk_pid %pid%,, 10
+	DllCall("AttachConsole", "uint", pid)
+	con := DllCall("CreateFile"
+		, "str", "CONOUT$", "uint", 0xC0000000, "uint", 7, "uint", 0, "uint", 3, "uint", 0, "uint", 0)
+		
+    ; WshShell object: http://msdn.microsoft.com/en-us/library/aew9yb99 Â¬
     shell := ComObjCreate("WScript.Shell")
     ; Execute a single command via cmd.exe
-    exec := shell.Exec(ComSpec " /c " command)
+    exec := shell.exec(command)
     ; Read and return the command's output
+
+	DllCall("CloseHandle", "uint", con)
+	DllCall("FreeConsole")
+	process close, % pid
+
     return exec.StdOut.ReadAll()
 }
 
 GetVideoControllers() {
-	VideoControllerDump := CMDtoSTDOut("wmic path win32_VideoController get name")
+	VideoControllerDump := CMDtoSTDOut("powershell.exe -command ""Get-CimInstance -ClassName win32_videocontroller | Select-Object -ExpandProperty Name""")
 	VideoControllers := ""
 	Loop, parse, VideoControllerDump, `n, `r  ; Specifying `n prior to `r allows both Windows and Unix files to be parsed. 
 	{
