@@ -25,7 +25,7 @@ Kai of <a href="https://kb.precisionplanit.com">PRPlanIT.com</a> presents:
 > Note: Additional features such as an Interactive Installer are planned. These features have been considered prior to creation of the tool and the design philosophy allows for ease of implementation.
 
 ### CMD/CLI Arguements:
-You can call the script/exe from a staging tool/sunshine with Admin Credentials ~ any process that loads it directly or a .bat that can calls it. This will allow you to load initial settings or toggle install/uninstall/reload.
+You can call the script/exe from a staging tool/sunshine with Admin Credentials ~ any process that loads it directly or a .bat that can call it. This will allow you to load initial settings or toggle install/uninstall/reload.
 To use command line arguments with the script you will need to pipe it through Autohotkey first (otherwise directly after the .exe): 
 > cmd /C SunshineIntegration.bat %SUNSHINE_CLIENT_WIDTH% %SUNSHINE_CLIENT_HEIGHT% %SUNSHINE_CLIENT_FPS%
 - Install / Uninstall / Reload the driver.
