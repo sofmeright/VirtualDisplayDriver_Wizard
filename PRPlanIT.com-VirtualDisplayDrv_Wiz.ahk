@@ -449,19 +449,48 @@ LoadBackupEntries()
 						}
 				; Msgbox, % BackupName1
 			}
+		return
 	}
-	
+Driver_GetInfName()
+	{
+		; i.e. DeviceID := Root\Display\0000
+		; i.e. HardwareID := ROOT\iddsampledriver
+		; return CMDtoSTDOut("powershell.exe -command ""Get-WmiObject Win32_PnPSignedDriver | Where-Object { $_.DeviceID -eq '%DeviceID%' } | Select-Object -ExpandProperty InfName""")
+		; CMDtoSTDOut("powershell.exe -command ""Get-WmiObject Win32_PnPSignedDriver | Where-Object { $_.HardwareID -contains 'ROOT\iddsampledriver' } | Select-Object -ExpandProperty InfName""")
+		RegExMatch(CMDtoSTDOut("pnputil /enum-devices /instanceid ROOT\Display\0000"), "Driver Name:[ ]+(oem[0-9]+.inf)", InfName)
+		return InfName1
+	}
 DriverInstall()
 {
-	Run, devcon install "%A_WorkingDir%\IddSampleDriver.inf" root\iddsampledriver
+	; Run, devcon install "%A_WorkingDir%\IddSampleDriver.inf" root\iddsampledriver
+	Inf_Name := Driver_GetInfName()
+	If Inf_Name != ""
+		{
+			DriverUnInstall()
+			Sleep, 500
+		}
+	RunWait, %A_WorkingDir%\nefconw.exe --create-device-node --hardware-id ROOT\iddsampledriver --class-name Display --class-guid 4D36E968-E325-11CE-BFC1-08002BE10318
+	;RunWait, %A_WorkingDir%\nefconw.exe --install-driver --inf-path "%A_WorkingDir%\IddSampleDriver.inf" ; Not implementing as it requests for reboot.
+	CMDtoSTDOut("pnputil /add-driver ""%A_WorkingDir%\IddSampleDriver.inf"" /install")
+	DriverReload()
+	return
 }
 DriverUnInstall()
 {
-	Run, devcon /r remove root\iddsampledriver
+	; Run, devcon /r remove root\iddsampledriver
+	Inf_Name := Driver_GetInfName()
+	; Msgbox, % Inf_Name
+	If Inf_Name != ""
+		CMDtoSTDOut("pnputil /delete-driver %Inf_Name% /uninstall /force")
+	CMDtoSTDOut("pnputil /remove-device /deviceid ROOT\iddsampledriver")
+	return
 }
 DriverReload()
 {
-	Run, devcon restart *iddsampledriver
+	; Run, devcon restart *iddsampledriver
+	; CMDtoSTDOut("powershell.exe -command ""Disable-PnpDevice -InstanceId Root\Display\0000 -Confirm:$false; Enable-PnpDevice -InstanceId Root\Display\0000 -Confirm:$false""")
+	CMDtoSTDOut("pnputil /restart-device /deviceid ROOT\iddsampledriver")
+	return
 }
 
 CMDtoSTDOut(command) {
