@@ -469,10 +469,10 @@ DriverInstall()
 			DriverUnInstall()
 			Sleep, 500
 		}
-	RunWait, %A_WorkingDir%\nefconw.exe --create-device-node --hardware-id ROOT\iddsampledriver --class-name Display --class-guid 4D36E968-E325-11CE-BFC1-08002BE10318
+	RunWait, "%A_WorkingDir%\nefconw.exe" --create-device-node --hardware-id ROOT\iddsampledriver --class-name Display --class-guid 4D36E968-E325-11CE-BFC1-08002BE10318
 	;RunWait, %A_WorkingDir%\nefconw.exe --install-driver --inf-path "%A_WorkingDir%\IddSampleDriver.inf" ; Not implementing as it requests for reboot.
-	CMDtoSTDOut("pnputil /add-driver ""%A_WorkingDir%\IddSampleDriver.inf"" /install")
-	DriverReload()
+	Runwait, pnputil /add-driver "%A_WorkingDir%\IddSampleDriver.inf" /install,, Hide
+	; DriverReload()
 	return
 }
 DriverUnInstall()
@@ -481,8 +481,8 @@ DriverUnInstall()
 	Inf_Name := Driver_GetInfName()
 	; Msgbox, % Inf_Name
 	If Inf_Name != ""
-		CMDtoSTDOut("pnputil /delete-driver %Inf_Name% /uninstall /force")
-	CMDtoSTDOut("pnputil /remove-device /deviceid ROOT\iddsampledriver")
+		Runwait, pnputil /delete-driver %Inf_Name% /uninstall /force,, Hide
+	Runwait, pnputil /remove-device /deviceid ROOT\iddsampledriver,, Hide
 	return
 }
 DriverReload()
