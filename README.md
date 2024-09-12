@@ -56,6 +56,7 @@ To use command line arguments with the script you will need to pipe it through A
 ### Integrating the tool with Sunshine:
 
 <img src="https://github.com/sofmeright/IDDSampleDriver_Wizard/blob/main/PPIT-IddSample_Wiz-SS_Sunshine_Integration.png" width="300" />
+
 >
 > cmd /C SunshineIntegration.bat %SUNSHINE_CLIENT_WIDTH% %SUNSHINE_CLIENT_HEIGHT% %SUNSHINE_CLIENT_FPS%
 
