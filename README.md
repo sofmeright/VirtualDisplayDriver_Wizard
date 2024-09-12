@@ -43,8 +43,9 @@ To use command line arguments with the script you will need to pipe it through A
 # Installation:
 1. Unpack the .exe or the .ahk source file. Note: If you wish to use the ".ahk" file (plain-text source code), you must install [Autohotkey](https://www.autohotkey.com).
 2. Unpack the [Virtual Display Drivers](https://github.com/itsmikethetech/Virtual-Display-Driver) (or other IDDSample drivers) into the same folder.
-3. Run the exe or script.
-4. How to use it? Read the GUI, do stuff. There are some recommendations scattered throughout this ReadMe as well.
+3. Install the certificate.
+4. Run the exe or script.
+5. How to use it? Read the GUI, do stuff. There are some recommendations scattered throughout this ReadMe as well.
 
 ### Notes / Hints:
 - At runtime it will load the vdd_settings.xml if present otherwise it will try to load adapter/option.txt. You can also replace/omit these accordingly at C:\IddSampleDriver if you want to workaround this very intended behavior.
