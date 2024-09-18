@@ -24,28 +24,10 @@ If IsProcessElevated(DllCall("GetCurrentProcessId"))
 	}
 	Else 
 		{
-			MsgBox, , PrecisionPlanIT.com's Virtual Display Driver: Wizard requires Admin, Note: The wizard needs to be ran as Admin so that install/uninstall/reload of drivers is possible., 5
+			MsgBox, , VirtualDisplayDriver: Wizard ~ Requires Admin, Note: The wizard will need Admin priveledges so that install/uninstall/reload of the driver is possible., 5
 			; Permissions escalation:
 			RequestAdminSelf()
-		}
-
-;------------------------------------------------------------------------------------------
-; Download Idd Driver Files
-;-------------
-
-IfNotExist, .\iddsampledriver.dll\ 
-{
-	UrlDownloadToFile, https://github.com/itsmikethetech/Virtual-Display-Driver/releases/download/24.9.11/IddSampleDriver.zip, IddSampleDriver.zip
-	FileCopyDir, IddSampleDriver.zip,  .\IddSampleDriver , Overwrite
-	FileCopy, .\IddSampleDriver\IddSampleDriver\iddsampledriver.cat , %A_ScriptDir%\iddsampledriver.cat
-	FileCopy, .\IddSampleDriver\IddSampleDriver\iddsampledriver.dll , %A_ScriptDir%\iddsampledriver.dll
-	FileCopy, .\IddSampleDriver\IddSampleDriver\iddsampledriver.inf , %A_ScriptDir%\iddsampledriver.inf
-	FileCopy, .\IddSampleDriver\IddSampleDriver\installcert.bat , %A_ScriptDir%\installcert.bat
-	FileCopy, .\IddSampleDriver\IddSampleDriver\vdd_settings.xml , %A_ScriptDir%\vdd_settings.xml
-	FileCopy, .\IddSampleDriver\IddSampleDriver\Virtual_Display_Driver.cer , %A_ScriptDir%\Virtual_Display_Driver.cer
-	FileRemoveDir, IddSampleDriver, 1
-	FileDelete, IddSampleDriver.zip
-}    		
+		}  		
 
 VideoControllers := GetVideoControllers()
 
@@ -120,6 +102,25 @@ if A_Args.Length() = 0
 			}
 
 
+;------------------------------------------------------------------------------------------
+; Download Idd Driver Files
+;-------------
+IfNotExist, IddSampleDriver.inf
+	MsgBox, 4, VirtualDisplayDriver: Wizard ~ Drivers not Detected, It appears you do not have the Virtual Display Drivers installed. `nClick YES to install itsmikethetech/Virtual-Display-Driver v24.9.11 automagically. `nClick NO and you can download them manually as described in the readme.
+	IfMsgBox, Yes
+		{
+			UrlDownloadToFile, https://github.com/itsmikethetech/Virtual-Display-Driver/releases/download/24.9.11/IddSampleDriver.zip, IddSampleDriver.zip
+			RunWait PowerShell.exe -Command Expand-Archive -LiteralPath '%A_ScriptDir%\IddSampleDriver.zip' -DestinationPath %A_ScriptDir%,, Hide
+			FileCopy, %A_ScriptDir%\IddSampleDriver\iddsampledriver.cat , %A_ScriptDir%\iddsampledriver.cat
+			FileCopy, %A_ScriptDir%\IddSampleDriver\iddsampledriver.dll , %A_ScriptDir%\iddsampledriver.dll
+			FileCopy, %A_ScriptDir%\IddSampleDriver\iddsampledriver.inf , %A_ScriptDir%\iddsampledriver.inf
+			FileCopy, %A_ScriptDir%\IddSampleDriver\installcert.bat , %A_ScriptDir%\installcert.bat
+			FileCopy, %A_ScriptDir%\IddSampleDriver\vdd_settings.xml , %A_ScriptDir%\vdd_settings.xml
+			FileCopy, %A_ScriptDir%\IddSampleDriver\Virtual_Display_Driver.cer , %A_ScriptDir%\Virtual_Display_Driver.cer
+			FileRemoveDir, IddSampleDriver, 1
+			FileDelete, IddSampleDriver.zip
+		}  
+;------------------------------------------------------------------------------------------
 ; MsgBox % LV_GetCount()
 If FileExist("C:\IddSampleDriver\vdd_settings.xml")
 	{
@@ -404,7 +405,7 @@ Else IfEqual, A_GuiEvent, K
 				LV_GetText(ResolutionWt, LV_GetNext(, "F"), 2)
 				LV_GetText(ResolutionHt, LV_GetNext(, "F"), 3)
 				LV_GetText(ResolutionHZ, LV_GetNext(, "F"), 4)
-				MsgBox, 4, Confirm deletion?, % "Are you sure you want to delete " . ResolutionWt . "x" . ResolutionHt . " " . ResolutionHz . "hz?"
+				MsgBox, 4, VirtualDisplayDriver: Wizard ~ Resolution ~ Confirm before Deletion, % "Are you sure you want to delete " . ResolutionWt . "x" . ResolutionHt . " " . ResolutionHz . "hz?"
 				IfMsgBox Yes
 					{
 						NewResolutionID := LV_GetNext(, "F")
@@ -544,6 +545,8 @@ GetVideoControllers() {
         	IfInString, A_LoopField, IddSampleDriver
         		continue
         	IfInString, A_LoopField, Microsoft Remote Display Adapter
+        		continue
+        	IfInString, A_LoopField, Parsec Virtual Display Adapter
         		continue
         	IfInString, A_LoopField, Virtual Display with HDR
         		continue
@@ -771,7 +774,7 @@ WriteConfig(Filename := "")
 				FileCopy, %A_WorkingDir%\Backups\vdd_settings.xml.temp, %A_WorkingDir%\Backups\vdd_settings.xml.Default.backup
 			}
 		If (DefaultBackupDetected = 0)
-			MsgBox, Your Backups folder did not contain a default backup entry. We took the liberty of making you one. From now on make your own backups if you want them.
+			MsgBox, , VirtualDisplayDriver: Wizard ~ ""Default"" Backup Created, Your Backups folder did not contain a default backup entry. `nWe took the liberty of making you one. `nFrom now on make your own backups if you want them., 10
 		; File copy to the ConfigAdapter_Filename ConfigOptions_Filename ConfigXML_Filename entries
 		FileCopy, %A_WorkingDir%\Backups\adapter.txt.temp, %ConfigAdapter_Filename%, 1
 		FileCopy, %A_WorkingDir%\Backups\option.txt.temp, %ConfigOptions_Filename%, 1
