@@ -15,6 +15,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 StringCaseSense, On
 DetectHiddenWindows, On
 global MonitorCount
+Menu, Tray, Icon, %A_WorkingDir%\PrPlanIT.com.ico
 ;------------------------------------------------------------------------------------------
 ; Admin Check:
 ;-------------
