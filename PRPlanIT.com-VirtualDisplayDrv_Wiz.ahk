@@ -29,6 +29,24 @@ If IsProcessElevated(DllCall("GetCurrentProcessId"))
 			RequestAdminSelf()
 		}
 
+;------------------------------------------------------------------------------------------
+; Download Idd Driver Files
+;-------------
+
+IfNotExist, .\iddsampledriver.dll\ 
+{
+	UrlDownloadToFile, https://github.com/itsmikethetech/Virtual-Display-Driver/releases/download/24.9.11/IddSampleDriver.zip, IddSampleDriver.zip
+	FileCopyDir, IddSampleDriver.zip,  .\IddSampleDriver , Overwrite
+	FileCopy, .\IddSampleDriver\IddSampleDriver\iddsampledriver.cat , %A_ScriptDir%\iddsampledriver.cat
+	FileCopy, .\IddSampleDriver\IddSampleDriver\iddsampledriver.dll , %A_ScriptDir%\iddsampledriver.dll
+	FileCopy, .\IddSampleDriver\IddSampleDriver\iddsampledriver.inf , %A_ScriptDir%\iddsampledriver.inf
+	FileCopy, .\IddSampleDriver\IddSampleDriver\installcert.bat , %A_ScriptDir%\installcert.bat
+	FileCopy, .\IddSampleDriver\IddSampleDriver\vdd_settings.xml , %A_ScriptDir%\vdd_settings.xml
+	FileCopy, .\IddSampleDriver\IddSampleDriver\Virtual_Display_Driver.cer , %A_ScriptDir%\Virtual_Display_Driver.cer
+	FileRemoveDir, IddSampleDriver, 1
+	FileDelete, IddSampleDriver.zip
+}    		
+
 VideoControllers := GetVideoControllers()
 
 Gui, New
