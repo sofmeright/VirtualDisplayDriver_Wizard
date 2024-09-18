@@ -62,7 +62,7 @@ To use command line arguments with the script you will need to pipe it through A
 
 - For some strange reason its possible to execute this with a .bat but not directly from Sunshine and it is not a syntax issue as we are passing the same syntax to a .bat.
 - Make sure to check the config.elevated option, admin is needed for Driver Reloading, the tool will not run w/o elevation.
-- Point the sunshine command to the SunshineIntegration.bat, then afterwards run qres to set the resolution and all your clients will automatically add any resolution that they request. There are FOSS HDR togglers available afaik as well.
+- Point the sunshine command to the SunshineIntegration.bat, then afterwards run qres to set the resolution and all your clients will automatically add any resolution that they request. There are [FOSS HDR togglers available](https://github.com/Nonary/AutoHDRSwitch) as well.
 
 ### Current Issues / Workarounds:
 - AFAIK I haven't closed the issue that it requires reload of GUI to show new backups in the dropdown if another selection is made after Saving them.
