@@ -59,15 +59,14 @@ To use command line arguments with the script you will need to pipe it through A
 
 The imporant and first one for this tool is:
 
->
 > C:\IddSampleDriver\SunshineIntegration.bat %SUNSHINE_CLIENT_WIDTH% %SUNSHINE_CLIENT_HEIGHT% %SUNSHINE_CLIENT_FPS%
 >
 
 I also have these below, in case you are curious what the others are...
 
+> "C:\_Staging\_Scripts\SoFMeRight\Run-Virtual_Here.ahk"
 >
->"C:\_Staging\_Scripts\SoFMeRight\Run-Virtual_Here.ahk"
->cmd /C C:\_Staging\_Utilities\QRes.exe /X:%SUNSHINE_CLIENT_WIDTH% /Y:%SUNSHINE_CLIENT_HEIGHT% /R:%SUNSHINE_CLIENT_FPS%
+> cmd /C C:\_Staging\_Utilities\QRes.exe /X:%SUNSHINE_CLIENT_WIDTH% /Y:%SUNSHINE_CLIENT_HEIGHT% /R:%SUNSHINE_CLIENT_FPS%
 
 - For some strange reason its possible to execute this with a .bat but not directly from Sunshine and it is not a syntax issue as we are passing the same syntax to a .bat.
 - Make sure to check the config.elevated option, admin is needed for Driver Reloading, the tool will not run w/o elevation.
