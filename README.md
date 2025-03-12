@@ -56,11 +56,15 @@ To use command line arguments with the script you will need to pipe it through A
 ### Integrating the tool with Sunshine:
 
 <img src="https://github.com/sofmeright/IDDSampleDriver_Wizard/blob/main/PPIT-IddSample_Wiz-SS_Sunshine_Integration.png" width="300" />
+
 The imporant and first one for this tool is:
+
 >
 > C:\IddSampleDriver\SunshineIntegration.bat %SUNSHINE_CLIENT_WIDTH% %SUNSHINE_CLIENT_HEIGHT% %SUNSHINE_CLIENT_FPS%
 >
+
 I also have these below, in case you are curious what the others are...
+
 >
 >"C:\_Staging\_Scripts\SoFMeRight\Run-Virtual_Here.ahk"
 >cmd /C C:\_Staging\_Utilities\QRes.exe /X:%SUNSHINE_CLIENT_WIDTH% /Y:%SUNSHINE_CLIENT_HEIGHT% /R:%SUNSHINE_CLIENT_FPS%
