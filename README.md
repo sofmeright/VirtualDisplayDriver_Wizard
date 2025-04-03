@@ -97,6 +97,9 @@ I also have these below, in case you are curious what the others are...
 
  >If you do not like AutoHotkey... You are most entitled to that opinion and encouraged to fork and port to something like Java or Python. Then I certainly will pull the changes, build a WebUI or do something as a token of gratitude & repect for your opinion. Otherwise as Deadpool said, MAXIMUM EFFORT!!! 🥴 AutoHotkey it is! 🤣
 
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=sofmeright/VirtualDisplayDriver_Wizard&type=Date)](https://www.star-history.com/#sofmeright/VirtualDisplayDriver_Wizard&Date)
+
 # Shout Outs
 - itsmikethetech ~ THANK YOU for your work on [the Virtual Display Driver](https://github.com/itsmikethetech/Virtual-Display-Driver/tree/0db50a948e4254733ae899b8e13f7517156ab7da)! HDR is something I was praying would get worked into Indirect Display Driver Sample for some time. I investigated this a few years back and it looked like so much work, I was like HECK-NO! The fact that you took the initiative to put forth the effort where many others such as myself did not, makes me all the more appreciative. It is a beautiful implemention and I can not fully express my gratitude. Without you, I would likely not have be using IDDSample at all!
 - roshkins ~ Thank you for providing the [base implementation](https://github.com/roshkins/IddSampleDriver) of Microsofts Indirect Display Driver Sample! Without you there's no knowing where we would be today in terms of the current implementations.
